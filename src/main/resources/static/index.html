@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Pesquisa de Jogos</title>
+    <link rel="stylesheet" href="css.css">
+
+    <!---Google font links-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+    <h1>Cadastro e Pesquisa de Jogos</h1>
+    <img src="img/controller.gif" width="100">
+    </header>
+    <div class="box">
+    <div class="part1">
+    <div id="cadastro">
+        <h1>Cadastro de Jogo</h1>
+        <form id="cadastroForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="plataform">Plataforma:</label>
+            <input type="text" id="plataform" name="plataform" required>
+            <br>
+            
+
+        </div>
+    </div>
+            <p id="test">
+            <button id="botao" type="submit">Cadastrar</button>
+            </p>
+        </form>
+        <div class="ajuste">
+        <button onclick="left()" id="seta"><img id="flip" src="https://img.freepik.com/icones-gratis/seta-direita_318-562127.jpg" width="10px"></button>
+            <button onclick="right()" id="seta"><img src="https://img.freepik.com/icones-gratis/seta-direita_318-562127.jpg" width="10px"></button>
+        </div>
+        </div>
+
+
+    <div class="box">
+    <div class="part1">
+    <div id="pesquisa">
+        <h1>Pesquisa de Jogo</h1>
+        <form id="pesquisaForm">
+            <label for="searchId">Id do Jogo:</label>
+            <input type="text" id="searchId" name="searchId"><br>
+        </div>
+    </div>
+        
+            <button type="button" onclick="pesquisarJogo()">Pesquisar</button>
+        
+        </form>
+    </div>
+    <div id="resultadoPesquisa"></div>
+
+  
+    <script src="js.js"></script>
+</body>
+</html>

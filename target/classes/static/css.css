@@ -1,0 +1,119 @@
+
+*{font-family: 'Pixelify Sans', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+   
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 33px 9%;
+    background-color: rgb(149, 0, 255);
+    height: 20px;
+    border-radius:  0px 0px 20px 20px ;
+}
+
+body{
+   display: flex;
+   align-items: center;
+   height: 100vh;
+   justify-content: space-around;
+
+}
+button{
+    background-color: rgb(149, 0, 255);
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.part1{
+    width: 300px;
+    height: 170px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid blueviolet 3px;
+    position: absolute;
+    
+}
+button{
+    margin-top: 170px;
+    position: absolute;
+    z-index: 10;
+    transform: scale(2);
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+    transition: 1.2s;
+    box-shadow: 3px 2px 5px 2px   rgba(0, 0, 0, 0.511);
+}
+
+button:hover{
+    transform: scale(2.3);
+    transition: 1s;
+    background-color: aliceblue;
+    color: rgb(149, 0, 255);
+}
+
+button:active{
+    background-color: rgb(191, 79, 219);
+    transition: 0s;
+    transform: scale(2.1);
+
+}
+
+#seta{
+    margin-top: 10px;
+    position: relative;
+    z-index: 10;
+    transform: scale(2);
+    border-radius: 20px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    transition: 1.2s;
+    box-shadow: 0px 0px 0px 0px   rgba(0, 0, 0, 0.511);
+    margin: 20px;
+}
+
+#flip{
+    transform: scaleX(-1);
+
+}
+
+#botão{
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+}
+
+#test{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-top: -200px;
+    margin-left: -100px;
+}
+
+.ajuste{
+    margin-top: 250px;
+}
